@@ -1,0 +1,175 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px; 		/* Utilizado par las dos imagenes del header, las pone mas al centro*/
+	margin-bottom: 1em;
+}
+
+.header-img {
+    width: 100px;
+    height: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+	transition: font-size 0.5s ease;
+}
+
+nav ul li a:hover {
+    font-size: 22px;
+	color:#AEB6BF;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+article {
+    background-color: #D7D7D7;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	height:45px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;  /* Espacio de 10px entre cada imagen en el ancho */
+	margin-bottom:100px;
+	
+}
+
+.galeria img {
+    width: calc(25% - 10px); /* Calcula el ancho como el 25% del ancho del contenedor padre menos 10 píxeles, para compensar los márgenes*/
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calendario {
+    display: flex;
+    justify-content: center;
+    margin: 20px; 
+	margin-bottom:100px;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.separacion-footer {
+	margin-bottom:100px;
+}
+
+.desplegable {
+    position: relative;
+}
+
+.desplegable-contenido {
+    display: none;
+    position: absolute;
+    background-color: #f8f8f8;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.desplegable-contenido a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.desplegable-contenido a:hover {
+    background-color: #ddd;
+}
+
+.mostrar {
+    display: block;
+}
